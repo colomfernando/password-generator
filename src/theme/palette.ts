@@ -1,18 +1,6 @@
-
-
 const palette = {
-  primary: {
-    light: '#f2a07c',
-    main: '#ef8354',
-    dark: '#d66533',
-    contrastText: '#fff',
-  },
-  secondary: {
-    light: '#7e8ba3',
-    main: '#4f5d75',
-    dark: '#36445c',
-    contrastText: '#fff',
-  },
+  green: '#1B998B',
+  red: '#D72638',
   error: {
     main: '#ff3333',
   },
@@ -38,7 +26,6 @@ const palette = {
 };
 
 export const hexToRgb = (hex: string): string => {
-
   const hexReplace = hex.replace(
     /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
     (_m, r, g, b) => '#' + r + r + g + g + b + b

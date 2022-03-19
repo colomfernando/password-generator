@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import palette from './palette';
 
 const GlobalStyle = createGlobalStyle`
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -24,6 +25,7 @@ html {
  */
 body {
   margin: 0;
+	background-color: ${palette.grey[300]};
 }
 /**
  * Render the main element consistently in IE.
