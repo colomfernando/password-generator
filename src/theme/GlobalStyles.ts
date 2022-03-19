@@ -26,6 +26,8 @@ html {
 body {
   margin: 0;
 	background-color: ${palette.grey[300]};
+	width: 100vw;
+	height: 100vh;
 }
 /**
  * Render the main element consistently in IE.
