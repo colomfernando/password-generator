@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 import palette from 'theme/palette';
+import Icon from 'components/Icon';
 
 const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
   background-color: ${palette.common.white};
   border-radius: 3px;
   padding: 15px;
@@ -11,4 +14,10 @@ const Wrapper = styled.div`
   font-size: 2rem;
 `;
 
-export default { Wrapper };
+const Value = styled.p``;
+
+const CopyIcon = styled(Icon)`
+  margin-left: auto;
+`;
+
+export default { Wrapper, Value, CopyIcon };

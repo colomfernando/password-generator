@@ -13,7 +13,8 @@ html {
   line-height: 1; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 	box-sizing: border-box;
-	font-size: 16px;
+	font-size: 18px;
+	font-family: 'Raleway', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -148,6 +149,16 @@ textarea {
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
+}
+
+input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 /**
  * Show the overflow in IE.
