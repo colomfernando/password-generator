@@ -12,7 +12,6 @@ import {
 
 const Options: React.FC = () => {
   const { state, dispatch } = useContext();
-  console.log('state.length :>> ', state.length);
 
   const handleOnChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { target } = event;
