@@ -14,7 +14,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 	box-sizing: border-box;
 	font-size: 18px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 *, *:before, *:after {
   box-sizing: inherit;

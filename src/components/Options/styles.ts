@@ -26,4 +26,17 @@ const Check = styled(Checkbox)`
   }
 `;
 
-export default { Wrapper, WrapperCheckbox, Title, Check };
+const WrapperRange = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const Length = styled.input`
+  align-items: center;
+  margin-right: 20px;
+  width: 60px;
+  height: auto;
+  padding: 5px 15px;
+  border: 2px solid ${palette.green};
+`;
+
+export default { Wrapper, WrapperCheckbox, Title, Check, WrapperRange, Length };

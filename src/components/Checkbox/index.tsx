@@ -7,16 +7,16 @@ export interface PropsCheckbox {
   onChange: () => void;
 }
 
-const Checkbox: React.FC<PropsCheckbox> = ({ checked, label, ...props }) => {
+const Checkbox: React.FC<PropsCheckbox> = ({
+  checked,
+  label,
+  onChange,
+  ...props
+}) => {
   return (
     <Styles.Label {...props}>
-      <Styles.Input type="checkbox" checked={checked} />
-      <Styles.Check
-        checked={checked}
-        // This element is purely decorative so
-        // we hide it for screen readers
-        aria-hidden="true"
-      >
+      <Styles.Input type="checkbox" checked={checked} onChange={onChange} />
+      <Styles.Check checked={checked} aria-hidden="true">
         {checked && (
           <Styles.CheckIcon iconName="check" width={14} height={14} />
         )}
