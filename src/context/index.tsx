@@ -3,6 +3,7 @@ import types from './types';
 import { Actions } from './actions';
 
 export interface IState {
+  password: string;
   numbers: boolean;
   capitalize: boolean;
   lowercase: boolean;
@@ -11,11 +12,12 @@ export interface IState {
 }
 
 const initialState = {
-  numbers: false,
-  capitalize: false,
-  lowercase: false,
-  symbols: false,
-  length: 1,
+  password: '',
+  numbers: true,
+  capitalize: true,
+  lowercase: true,
+  symbols: true,
+  length: 12,
 };
 
 export interface IReducer {
@@ -33,6 +35,9 @@ const Store = React.createContext<{
 
 const contextReducer = (state: IState, action: Actions): IState => {
   switch (action.type) {
+    case types.SET_PASSWORD:
+      return { ...state, password: action.payload } as IState;
+
     case types.SET_CAPITALIZE:
       return { ...state, capitalize: action.payload } as IState;
 

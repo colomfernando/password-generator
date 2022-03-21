@@ -1,4 +1,5 @@
 export default {
+  SET_PASSWORD: 'context/SET_PASSWORD',
   SET_CAPITALIZE: 'context/SET_CAPITALIZE',
   SET_LOWERCASE: 'context/SET_LOWERCASE',
   SET_SYMBOLS: 'context/SET_SYMBOLS',

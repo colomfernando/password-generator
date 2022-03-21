@@ -5,7 +5,7 @@ export interface IAction<T> {
   payload: T;
 }
 
-export type Actions = IAction<boolean> | IAction<number>;
+export type Actions = IAction<boolean> | IAction<number> | IAction<string>;
 
 export const setCapitalize = (payload: boolean): IAction<boolean> => ({
   type: types.SET_CAPITALIZE,
@@ -29,5 +29,10 @@ export const setSymbols = (payload: boolean): IAction<boolean> => ({
 
 export const setLength = (payload: number): IAction<number> => ({
   type: types.SET_LENGTH,
+  payload,
+});
+
+export const setPassword = (payload: string): IAction<string> => ({
+  type: types.SET_PASSWORD,
   payload,
 });

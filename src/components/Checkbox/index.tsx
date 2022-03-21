@@ -4,7 +4,7 @@ import Styles from './styles';
 export interface PropsCheckbox {
   checked: boolean;
   label: string;
-  onChange: () => void;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const Checkbox: React.FC<PropsCheckbox> = ({

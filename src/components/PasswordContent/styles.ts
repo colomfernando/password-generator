@@ -14,7 +14,12 @@ const Wrapper = styled.div`
   font-size: 2rem;
 `;
 
-const Value = styled.p``;
+const Value = styled.p`
+  max-width: 520px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+`;
 
 const CopyIcon = styled(Icon)`
   margin-left: auto;
