@@ -4,7 +4,9 @@ import Icon from 'components/Icon';
 
 const Wrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   background-color: ${palette.common.white};
   border-radius: 3px;
   padding: 15px;
@@ -21,8 +23,13 @@ const Value = styled.p`
   text-overflow: ellipsis;
 `;
 
-const CopyIcon = styled(Icon)`
-  margin-left: auto;
+const Msg = styled.span`
+  flex-basis: 100%;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: ${palette.success.main};
 `;
 
-export default { Wrapper, Value, CopyIcon };
+const CopyIcon = styled(Icon)``;
+
+export default { Wrapper, Value, CopyIcon, Msg };
