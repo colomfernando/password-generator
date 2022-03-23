@@ -2,8 +2,7 @@ name: Deploy to netlify on release
 
 on:
   push:
-    tags:
-      - '*'
+    tags: ['*']
 jobs:
   deploy:
     runs-on: ubuntu-latest
