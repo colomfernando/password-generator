@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import palette from 'theme/palette';
 import Checkbox from 'components/Checkbox';
+import breakpoints from 'theme/breakpoints';
+// import breakpoints from 'theme/breakpoints';
 
 const Wrapper = styled.div`
   margin-top: 20px;
@@ -17,13 +19,19 @@ const Title = styled.h3`
 
 const WrapperCheckbox = styled.div`
   display: flex;
+  flex-flow: column nowrap;
   margin-bottom: 40px;
+  ${breakpoints.md`
+		flex-flow: row;
+	`}
 `;
 
 const Check = styled(Checkbox)`
-  &:not(:last-child) {
-    margin-right: 25px;
-  }
+  ${breakpoints.md`
+		&:not(:last-child) {
+			margin-right: 25px;
+		}
+	`}
 `;
 
 const WrapperRange = styled.div`
