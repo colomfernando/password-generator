@@ -7,7 +7,7 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### Bug Fixes
 
-* :bug: actoin ([b77fa87](https://github.com/mokkapps/changelog-generator-demo/commits/b77fa87728faa54023948aae1e55dfd2dcdebf0c))
+* :bug: action ([b77fa87](https://github.com/mokkapps/changelog-generator-demo/commits/b77fa87728faa54023948aae1e55dfd2dcdebf0c))
 
 ## [1.2.0](https://github.com/mokkapps/changelog-generator-demo/compare/v1.1.0...v1.2.0) (2022-03-23)
 
